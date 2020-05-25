@@ -1,0 +1,39 @@
+@startuml
+class UML_HWLabScuola {
+    public static void main(String[] args)
+}
+class CComputer {
+    String   marca;
+    int      byteRam;
+    int      byteHD;
+}
+class CDate {
+    int numGiorni;    
+    String toString();
+}
+class CHardware {
+    int   codiceIdentificativo;
+    int   costo;
+    CDate dataAcquisto;
+}
+class CLaboratorio {
+    int       siglaIdentificativa;
+    String    nome;
+    String    descrizione;
+    String    edificio;
+    int       piano;
+}
+class CPersona {
+    String  nome;
+    CDate   dataNascita;  
+}
+class CProfessore {
+    String materiaInsegnata;
+    int    tipoProfessore; // Docente o ITP
+}
+class CStudente {
+    String  classe;
+    String  specializzazione;
+}
+
+@enduml
